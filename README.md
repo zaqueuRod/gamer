@@ -1,79 +1,49 @@
 # gamer
-/* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Gamer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Site Gamer</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Jogos</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-}
+    <section class="destaque">
+        <h2>Jogo em Destaque</h2>
+        <article>
+            <img src="destaque.jpg" alt="Jogo em Destaque">
+            <p>Descrição do jogo em destaque.</p>
+        </article>
+    </section>
 
-header h1 {
-    margin: 0;
-}
+    <section class="jogos">
+        <h2>Outros Jogos</h2>
+        <article>
+            <img src="jogo1.jpg" alt="Jogo 1">
+            <h3>Jogo 1</h3>
+            <p>Descrição do Jogo 1.</p>
+        </article>
+        <article>
+            <img src="jogo2.jpg" alt="Jogo 2">
+            <h3>Jogo 2</h3>
+            <p>Descrição do Jogo 2.</p>
+        </article>
+    </section>
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-.destaque {
-    text-align: center;
-    margin: 2rem 0;
-}
-
-.destaque img {
-    max-width: 100%;
-}
-
-.jogos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 2rem 0;
-}
-
-.jogos article {
-    background-color: #fff;
-    padding: 1rem;
-    margin: 1rem;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
-.jogos img {
-    max-width: 100%;
-}
-
-footer {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 1rem 0;
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .jogos article {
-        width: 45%;
-    }
-}
+    <footer>
+        <p>&copy; 2023 Site Gamer</p>
+    </footer>
+</body>
+</html>
